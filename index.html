@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- http://www.slidesjs.com/ 
+        https://icomoon.io/app/#/select/font -->
+    
+	<head>
+        <link rel="= stylesheet" style="text/css" href="css/estilos.css" media="screen"/>
+        <link rel="= stylesheet" style="text/css" href="css/fonts.css" media="screen"/>
+        
+
+        <link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon.ico" />	
+     	<title> una casa</title>
+
+	</head>
+
+	<body> 
+		<!-- <header>	
+		</header>	 -->			  
+	        
+        <div id= "contenedor">
+            <div id= "cabecera">                              			
+            </div> <!-- cabecera -->
+			<div id="menu">
+				<ul>					
+					<li><a href="#AnclaReceta">Recetas</a></li>
+					<li><a href="#AnclaTiendas">Ambientes</a></li>	
+				</ul>					
+				<img id="logo" src= "imagenes/logo-sos-s.png" alt = "imagen cabecera">		
+				<ul>					
+					<li><a href="#AnclaArreglos">Arreglos</a></li> 
+					<li><a href="contacto.html">Contacto</a></li> 
+				</ul>
+			</div> <!-- menu -->
+			
+            <a name="AnclaInicio"></a> 		
+            
+            <div class="main">
+	           <div class="slides">					
+                        <img src="imagenes/slider/sld1.png" alt="sld1">
+                        <img src="imagenes/slider/sld2.png" alt="sld2">
+                        <img src="imagenes/slider/sld3.png" alt="sld3">
+                        <img src="imagenes/slider/sld4.png" alt="sld4">  
+                </div> <!-- slides -->						        
+            </div> <!-- main -->
+            
+            <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 			                
+            <script type= "text/javascript" src="js/jquery.slides.js"></script>    
+            <script>
+                /*$(function(){
+                      $(".slides").slidesjs({                
+                      });
+                    });*/
+                $(function(){
+                  $(".slides").slidesjs({
+                    play: {
+                      active: true,
+                        // [boolean] Generate the play and stop buttons.
+                        // You cannot use your own buttons. Sorry.
+                      effect: "slide",
+                        // [string] Can be either "slide" or "fade".
+                      interval: 3000,
+                        // [number] Time spent on each slide in milliseconds.
+                      auto: true, 
+                        // [boolean] Start playing the slideshow on load.
+                      swap: true,
+                        // [boolean] show/hide stop and play buttons
+                      pauseOnHover: false,
+                        // [boolean] pause a playing slideshow on hover
+                      restartDelay: 2500
+                        // [number] restart delay on inactive slideshow
+                    }
+                  });
+                });                
+            </script>
+			                     
+			<a name="AnclaReceta"></a>
+
+			<div class= "botonreceta">								
+				<h1> Recetas </h1>
+				<h3><b> Frutas decoradas </b></h3> 	
+				<span class="rounded">
+					<img src="imagenes/recetas/frutas.jpg" alt="Frutas " title="Frutas"> 
+				</span>          
+				<span class="fuente"> 				
+						<br> </br>
+						RANAS HECHAS CON FRUTILLAS: Mira a estas ranas hechas de frutillas y naranjas
+						<br> </br>Bien podr&iacute;an adornar la mesa de bocaditos en el cumple de tu ni&ntilde;o, o ser partes de 
+						<br> </br>tus terror&iacute;ficos postres ...
+				</span>		
+                <a href="#AnclaInicio"> subir </a>
+            </div> <!-- botonreceta -->                
+                
+            <div class= "botonreceta">
+				<br></br>
+                <h3><b> Decorados saladitos </b> </h3>
+                <span class="rounded">
+                   <img src="imagenes/recetas/sandwich.jpg" alt="Decorados saladitos " title="Decorados saladitos">   
+                </span>                     
+				<article>
+				<span class="fuente"> 				
+					<br> </br>						
+					SANDWICH PARA NI&Ntilde;OS: Este sandwich perfecto para pon&eacute;rselo a los ni&ntilde;os como almuerzo o merienda, 
+					<br> </br>al ser vegetal puede tomarse en cualquier momento en fr&iacute;o, y les aportar&aacute; muchas vitaminas. Una alimentaci&oacute;n completa es necesaria para su crecimiento, por eso haz esta receta para tus hijos.
+				</span>		
+				</article>
+                <a href="#AnclaInicio"> subir </a>
+            </div> <!-- botonreceta -->                
+
+            <div class= "botonreceta">
+				<br></br>
+                <h3><b> Postre helado de dulce de leche y merengues </b> </h3>                
+                <span class="rounded">
+                    <img src="imagenes/recetas/dulceHelado.jpg" alt="Dulce de Leche y helado" title="Postre helado de dulce de leche y merengues">   
+                </span>       
+				<span class="fuente"> 				
+					<br> </br>						
+					POSTRE. DULCE. Este postre lo prepare con cosas de la heladera. Todo sirve la cocina 
+					<br> </br> <u>Ingredientes </u>
+				</span>					
+                <a href="#AnclaInicio"> subir </a>
+            </div> <!-- botonreceta -->
+
+           	<div class="containingbox">
+				<a name="AnclaTiendas"></a>
+				<h2> Ambientes </h2>
+				<h3> Decoraci&oacute;n </h3>
+				<div class="botontienda">
+					   <img src="imagenes/tiendas/t1-ch.png" alt="tiendas1" title="Propuesta 1">
+				</div> <!-- botontienda -->
+ 
+				<div class="botontienda">
+					<img src="imagenes/tiendas/t2-ch.jpg" alt="tiendas2" title="Propuesta 2">
+				</div>  <!-- botontienda -->
+                    
+				<div class="botontienda">
+					<img src="imagenes/tiendas/t3-ch.png" alt="tiendas3" title="Propuesta 3">  
+				</div>  <!-- botontienda -->
+
+				<div class="botontienda">
+					<img src="imagenes/tiendas/t4-ch.png" alt="tiendas4" title="Propuesta 4">
+				</div>   <!-- botontienda -->   
+
+				<a href="#AnclaInicio"> subir </a>									<hr >
+                
+			</div> <!-- containingbox -->         
+      
+			<div class="containingbox-2">    
+			    <a name="AnclaArreglos"></a>
+				<h2> Arreglos y Soluciones </h2>
+                
+				<br></br>
+				<a href="#AnclaInicio"> subir </a>
+                <hr>
+			</div>  <!-- containingbox-2 -->	
+			
+		</div>  <!-- contenedor -->				
+	  	</section>								
+			
+		<div id= "pie"> Viviana Nakatsuka copyright          
+		</div>   
+  
+	</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="= stylesheet" style="text/css" href="css/estilos.css" media="screen"/>
+		<link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon.ico" />	        
+		<script type= "text/javascript" src="js/validacion.js"></script>  
+		<title> una casa</title>
+	</head>
+    
+	<body>  
+		<div id= "cabecera"> 
+                <img src="imagenes/logo-sos-s.png" alt="sos tengo una casa">                
+            </div>
+        <div id= "contenedor">
+    
+        <form action="mailto:viviana.nakatsuka@gmail.com" method="post" enctype="text/plain" id="formulario" name="formulario" onsubmit='return validar(this);'>
+<!-- <form action="" method="post" id="formulario" name="formulario" onsubmit='return validar(this);'>  mando this es enviar datos  -->
+            <!-- <p> nombre y apellido: <input type="text" name="nombre" id="nombre"/></p>
+            <p> telefono: <input type="text" name="telefono" id="telefono"/></p> <!--para validar -->
+                <div class="f-consulta">
+           
+                    <div class="col">
+                        <label class="f-letras"> Nombre </label>
+						<label for ="nombre" </label>
+                        <input type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre" size="35" maxlength="35" value= " ">  
+                    </div> 
+					<div class="col">
+                        <label class="f-letras"> Telefono </label>
+                        <input type="text" name="telefono" id="telefono" size="35" maxlength="35" value= " ">  
+                    </div> 					
+					<div class="col"> 
+						<label class="f-letras">e-mail</label> 
+						<input type="text" name="email" id="email" value="" size="35" maxlength="35">
+					</div>
+                                            
+					<div class="col">                            
+						<div class="f-letras"> Elige el rango de edad en que te encuentras </div>
+					   
+							<input type="radio" name="Edad" value="Menor de 18"> Tengo menos de 20 <br> 
+							<input type="radio" name="Edad" value="De 21 a 35"> Tengo entre 21 y 35 <br> 
+							<input type="radio" name="Edad" value="De 36 a 50"> Tengo entre 36 y 50 <br>
+							<input type="radio" name="Edad" value="M&aacute;s de 51"> Tengo m&aacute;s de 51                 
+					
+					</div>
+				
+					<div class="col">                     
+						<div class="f-letras" > Consulta </div>
+						<div>    
+							<textarea name="Mensaje" cols="40" rows="4">  </textarea>
+						</div>
+					</div>
+				
+					<div class="col"> 
+						<div class="f-letras"> Tiempo libre </div>
+				
+						<input type="checkbox" name="Gustos" value="Leer"> Me gusta Leer <br>
+						<input type="checkbox" name="Gustos" value="Cine"> Ir al Cine <br> 
+						<input type="checkbox" name="Gustos" value="Aire"> Actividad al aire libre <br>
+						<input type="checkbox" name="Gustos" value="Ejercicio"> Hacer ejercicios <br>       
+						
+					</div>
+                            
+					<div class="col"> 
+						<div class="f-letras"> Elige tu d&iacute;a disponible: </div>        
+							<select name="Mejor_dia">
+								<option value="" ></option> 
+								<option value="Lunes" > Lunes </option>
+								<option value="Martes" > Martes </option>
+								<option value="Miercoles" > Miercoles </option>
+								<option value="Jueves" > Jueves </option>
+								<option value="Viernes" > Viernes </option>
+								<option value="Sabado" > Sabado </option>
+								<option value="Domingo" > Domingo </option>
+							</select>                        
+					 </div>                            
+
+					<div>
+						<div>
+							<input type="submit" value="Enviar Consulta">
+							<input type="reset" value="Borrar" > 
+						</div> <!-- boton -->
+					</div>     
+                </div> <!-- f-consulta -->
+            
+            </form>
+    </div> <!-- contenedor -->
+</body>
+    
+</html>
